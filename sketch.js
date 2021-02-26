@@ -58,7 +58,7 @@ if (istouching(box,rect3)){
     box.velocityX= 0
     box.velocityY= 0
     box.shapeColor= "yellow"
-    music.pause();
+    music.stop();
     
     }
 
