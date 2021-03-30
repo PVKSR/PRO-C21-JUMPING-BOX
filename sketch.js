@@ -43,14 +43,17 @@ function draw() {
 if (istouching(box,rect2)){
     box.shapeColor= "red";
     music.play();
+    bounceoff(box,rect2);
 }
 
 if(istouching(box,rect1)){
     box.shapeColor= "lightblue";
+    bounceoff(box,rect1);
 } 
     
     if(istouching(box,rect4)){
     box.shapeColor= "green";
+    bounceoff(box,rect4);
 }
 
 
@@ -62,9 +65,9 @@ if (istouching(box,rect3)){
     }
 
 box.bounceOff(edges);
-bounceoff(box,rect2);
-bounceoff(box,rect1);
-bounceoff(box,rect4);
+
+
+
 
 
     drawSprites();
